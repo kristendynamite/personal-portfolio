@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/background-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 3em 3em;
+  text-align: center;
+  a {
+  color: #FFF;
+  font-size: 2em;
+  margin: 0px 10px;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  text-decoration: none;
+  &::before, &::after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: linear-gradient(to right, turquoise, silver, mistyrose, hotpink);
+    transition: all 0.3s;
+  }
+  &::before {
+    left: 0px;
+    top: 0px;
+  }
+  &::after {
+    right: 0px;
+    bottom: 0px;
+  }
+  &:hover::before, &:hover::after {
+    opacity: 1;
+    width: 100%;
+  }
+  }
+}

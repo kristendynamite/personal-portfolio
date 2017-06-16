@@ -19,9 +19,96 @@ html, body, .container {
   font-family: 'Red Moon Rising';
   src: url("../font/Red-Moon-Rising-3.0tf"); }
 body {
-  font-family: sans-serif; }
+  font-family: "Nunito", sans-serif; }
+
+h1, h3 {
+  color: mintcream; }
+  h1:hover, h3:hover {
+    color: #ffb6ae; }
 
 a {
   font-family: "Red Moon Rising"; }
+
+p {
+  font-size: 14px; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/background-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 3em 3em;
+  text-align: center; }
+  header a {
+    color: #FFF;
+    font-size: 2em;
+    margin: 0px 10px;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    text-decoration: none; }
+    header a::before, header a::after {
+      position: absolute;
+      opacity: 0;
+      width: 0%;
+      height: 2px;
+      content: '';
+      background: linear-gradient(to right, turquoise, silver, mistyrose, hotpink);
+      transition: all 0.3s; }
+    header a::before {
+      left: 0px;
+      top: 0px; }
+    header a::after {
+      right: 0px;
+      bottom: 0px; }
+    header a:hover::before, header a:hover::after {
+      opacity: 1;
+      width: 100%; }
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  height: 100%;
+  background-image: url(../img/background-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 1em 3em; }
+  .about-me .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between; }
+    .about-me .content p {
+      width: 250px;
+      letter-spacing: .1em;
+      text-align: left;
+      line-height: 1.6em;
+      padding: 5px;
+      background: mistyrose;
+      opacity: 0.7;
+      border-radius: 5px; }
+      .about-me .content p:hover {
+        opacity: 1; }
+    .about-me .content img {
+      border-radius: 100%;
+      width: 30%;
+      flex: 1;
+      padding: 5px;
+      opacity: 0.7; }
+      .about-me .content img:hover {
+        opacity: 1; }
 
 /*# sourceMappingURL=output.css.map */

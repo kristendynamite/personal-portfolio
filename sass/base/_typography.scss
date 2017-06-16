@@ -7,6 +7,17 @@ body {
   font-family: $default-font;
 }
 
+h1, h3 {
+  color: mintcream;
+  &:hover {
+    color: darken(mistyrose, 10%);
+  }
+}
+
 a {
   font-family: $header-font;
+}
+
+p {
+  font-size: 14px;;
 }
