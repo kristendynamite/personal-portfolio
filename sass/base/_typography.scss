@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Red Moon Rising';
+  src: url('../font/Red-Moon-Rising-3.0tf');
+}
+
+body {
+  font-family: $default-font;
+}
+
+a {
+  font-family: $header-font;
+}

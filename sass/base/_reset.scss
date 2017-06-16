@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-align: center;
   box-sizing: border-box;
   &:after {
     box-sizing: border-box;
@@ -8,21 +9,14 @@
   &:before {
     box-sizing: border-box;
   }
+  *:not(body):not(html) {
+    border:1px dashed #000;
+  }
+  header, section, footer {
+    min-height: 100px;
+  }
 }
 
 html, body, .container {
   height: 100%;
 }
-
-/* For testing only */
-
-*:not(body):not(html) {
-  box-sizing:border-box;
-  border:1px dashed #000;
-}
-
-.columns {
-  min-height: 100px;
-}
-
-/* End for testing */
