@@ -73,22 +73,8 @@ header {
       opacity: 1;
       width: 100%; }
 
-.hero {
-  align-items: center;
-  background: image-url("background-image.png");
-  background-position: right;
-  background-size: none;
-  display: flex;
-  justify-content: center;
-  min-height: 25em;
-  padding: 2em; }
-  .hero .hero-content {
-    max-width: 20em;
-    text-align: center; }
-  .hero .hero-logo {
-    margin: auto; }
-
 .about-me {
+  border-top: 100px solid black;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -98,7 +84,7 @@ header {
   padding: 1em 3em; }
   .about-me .intro {
     flex-direction: column;
-    padding: 5px;
+    padding: 20px 5px 5px 5px;
     height: 400px;
     font-size: .9em; }
     .about-me .intro img {
@@ -140,8 +126,8 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 100%;
-  margin: 0 auto; }
+  border-top: 100px solid black;
+  padding-top: 50px; }
   .portfolio h2 {
     padding: 20px;
     color: white;
@@ -149,73 +135,19 @@ header {
     display: flex;
     align-self: flex-start;
     margin: 0 auto; }
-  .portfolio .hover-tile-outer {
-    background-image: url(../img/portfolio-2.png);
-    background-color: beige;
-    background-position: top;
-    background-size: cover;
-    border: 1px solid turquoise;
-    cursor: pointer;
-    height: 15em;
-    margin-bottom: 1.5em;
-    width: 33%;
-    position: absolute;
-    top: 80px; }
-    .portfolio .hover-tile-outer .hover-tile-container {
-      height: 15em;
-      overflow: hidden; }
-    .portfolio .hover-tile-outer .hover-tile-container:hover > .hover-tile {
-      transform: translate(0, -100%); }
-    .portfolio .hover-tile-outer .hover-tile {
-      background: inherit;
-      color: white;
-      height: inherit;
-      overflow: hidden;
-      padding: 1.5em;
-      transition: all 0.2s ease-in-out; }
-    .portfolio .hover-tile-outer .hover-tile-hidden {
-      background: rgba(0, 0, 0, 0.5); }
-      .portfolio .hover-tile-outer .hover-tile-hidden p {
-        color: rgba(255, 255, 255, 0.7);
-        line-height: 1.5em; }
-      .portfolio .hover-tile-outer .hover-tile-hidden h4 {
-        margin: 0 0 0.5em 0; }
-  .portfolio::after {
-    clear: both;
-    content: "";
-    display: block; }
-  .portfolio .gallery-wrap {
-    display: flex;
-    flex-flow: row wrap; }
-    .portfolio .gallery-wrap .port-gallery {
-      height: 300px;
-      flex-grow: 1;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top left;
-      border-top: solid 1px darkgrey;
-      border-bottom: solid 1px darkgrey;
-      margin-bottom: 10px;
-      overflow: none; }
-  .portfolio .drunklandia {
-    background-image: url(../img/portfolio-1.png);
-    left: 30em; }
-  .portfolio .deere {
-    background-image: url(../img/portfolio-3.png);
-    left: 60em; }
   .portfolio .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: absolute;
-    top: 100px; }
+    top: 220px; }
   .portfolio .card {
     background-color: #6ce7db;
     border: 1px solid turquoise;
     border-radius: 3px;
     box-shadow: 0 2px 4px #e6e6e6;
     cursor: pointer;
-    flex-basis: 15em;
+    flex-basis: 25em;
     flex-grow: 1;
     margin: 0 1em 1.5em 1em;
     position: relative;
@@ -254,25 +186,9 @@ header {
       .portfolio .card:active .card-header {
         background-color: #6ce7db; }
 
-.spinsters {
-  background-image: url(../img/portfolio-4.png);
-  width: 33%; }
-
-.wildfang {
-  background-image: url(../img/portfolio-5.png);
-  width: 33%; }
-
-.movie {
-  background-image: url(../img/portfolio-6.png);
-  width: 33%; }
-
 .makeup {
   margin: 0 auto;
-  background-image: url(../img/background-2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
+  background: black; }
   .makeup h2 {
     padding: 20px;
     color: white;

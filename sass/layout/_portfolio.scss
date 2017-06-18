@@ -7,6 +7,8 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  border-top: 100px solid black;
+  padding-top: 50px;
 
   h2 {
     padding: 20px;
@@ -16,102 +18,13 @@
     align-self: flex-start;
     margin: 0 auto;
   }
-  .hover-tile-outer {
-  $base-border-color: turquoise !default;
-  $base-line-height: 1.5em !default;
-  $medium-screen: 40em !default;
-  $hover-tile-height: 15em;
-  $base-spacing: 1.5em;
 
-  // background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
-  background-image: url(../img/portfolio-2.png);
-  background-color: beige;
-  background-position: top;
-  background-size: cover;
-  border: 1px solid $base-border-color;
-  cursor: pointer;
-  height: $hover-tile-height;
-  margin-bottom: $base-line-height;
-  width: 33%;
-  position: absolute;
-  top: 80px;
-
-  // @include media($medium-screen) {
-  //   width: 40%;
-  // }
-
-  .hover-tile-container {
-    height: $hover-tile-height;
-    overflow: hidden;
-  }
-
-  .hover-tile-container:hover > .hover-tile {
-    transform: translate(0, -100%);
-  }
-
-  .hover-tile {
-    background: inherit;
-    color: white;
-    height: inherit;
-    overflow: hidden;
-    padding: $base-spacing;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .hover-tile-hidden {
-    background: transparentize(#000, 0.5);
-
-    p {
-      color: transparentize(#fff, 0.3);
-      line-height: $base-line-height;
-    }
-
-    h4 {
-      margin: 0 0 0.5em 0;
-    }
-  }
-}
-  height: 100%;
-  margin: 0 auto;
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
-  // background-attachment: fixed;
-  @include grid-container;
-  .gallery-wrap {
-    // position: relative;
-    // margin-top: 30px;
-    display: flex;
-    flex-flow: row wrap;
-    .port-gallery {
-      height: 300px;
-      flex-grow: 1;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top left;
-      border-top: solid 1px darkgrey;
-      border-bottom: solid 1px darkgrey;
-      margin-bottom: 10px;
-      overflow: none;
-    }
-  }
-  // h2 {
-  //   @include grid-column(12);
-  // }
-  .drunklandia {
-    background-image: url(../img/portfolio-1.png);
-    left: 30em;
-  }
-  .deere {
-    background-image: url(../img/portfolio-3.png);
-    left: 60em;
-  }
   .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   position: absolute;
-  top: 100px;
+  top: 220px;
   }
 
   .card {
@@ -135,7 +48,7 @@
     border-radius: $base-border-radius;
     box-shadow: 0 2px 4px darken($base-background-color, 10%);
     cursor: pointer;
-    flex-basis: 15em;
+    flex-basis: 25em;
     flex-grow: 1;
     margin: 0 $card-margin $base-spacing $card-margin;
     position: relative;
@@ -193,31 +106,4 @@
   }
 }
 
-}
-
-// .drunklandia {
-//   background-image: url(../img/portfolio-1.png);
-//   width: 33%;
-// }
-
-// .freddy {
-//   background-image: url(../img/portfolio-2b.png);
-//   width: 33%;
-// }
-
-
-
-.spinsters {
-  background-image: url(../img/portfolio-4.png);
-  width: 33%;
-}
-
-.wildfang {
-  background-image: url(../img/portfolio-5.png);
-  width: 33%;
-}
-
-.movie {
-  background-image: url(../img/portfolio-6.png);
-  width: 33%;
 }
