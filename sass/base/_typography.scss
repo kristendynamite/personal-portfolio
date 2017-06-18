@@ -7,8 +7,12 @@ body {
   font-family: $default-font;
 }
 
-h1, h3 {
-  color: mintcream;
+h1, h2 {
+  font-family: $header-font;
+}
+
+h3, h5 {
+  color: black;
   &:hover {
     color: darken(mistyrose, 10%);
   }

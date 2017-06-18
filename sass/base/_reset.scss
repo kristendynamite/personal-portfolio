@@ -9,9 +9,9 @@
   &:before {
     box-sizing: border-box;
   }
-  *:not(body):not(html) {
-    border:1px dashed #000;
-  }
+  // *:not(body):not(html) {
+  //   border:1px dashed #000;
+  // }
   header, section, footer {
     min-height: 100px;
   }
