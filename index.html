@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Kristen McKee's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700|Poppins:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,500i,600i,700|Crimson+Text:400,400i,600,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/output.css" type="text/css" />
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://use.fontawesome.com/5e81dd0582.js"></script>
@@ -12,12 +12,12 @@
   <body>
     <div class="container">
       <header>
-        <a>ABOUT</a>
-        <a>PORTFOLIO</a>
-        <a>MAKEUP</a>
+        <a href="#top">ABOUT</a>
+        <a href="#middle">PORTFOLIO</a>
+        <a href="#bottom">MAKEUP</a>
       </header>
 
-      <div class="about-me">
+      <div id="top" class="about-me">
         <div class="intro">
           <h3>Kristen McKee</h3>
           <img src="img/about-me.png" alt="">
@@ -25,11 +25,11 @@
           <h5>Aspiring Web Developer</h5>
         </div>
         <div class="content">
-          <p><span>Howdy!</span><br>My name is Kristen. It's nice to meet you.<br>I'm an Epicodus student, Makeup Artist, and proud mama.<br>My alma mater is Santa Clara University. I was born in the Bay Area, raised in Texas, and now live in the PNW.<br>For several years, I worked in online advertising at Google.<br>In 2013, I did some traveling before pursuing a new career in the beauty industry here in Portland.<br>Working closely with local photographers and designers as a makeup artist has woken up my creative side, and I love sharing my vision through web design.</p>
+          <p><span>Hi!</span><br>My name is Kristen. It's nice to meet you.<br>I'm an Epicodus student, <a href="http://www.naturalglowpdx.com">Makeup Artist</a>, and Mama.<br>My alma mater is Santa Clara University. I was born in the Bay Area, raised in Texas, and now live in the PNW.<br>For several years, I worked in online advertising at Google.<br>In 2013, I did some traveling before pursuing a new career in the beauty industry here in Portland.<br>Working closely with local photographers and designers as a makeup artist has woken up my creative side, and I love sharing my vision through web design.</p>
         </div>
       </div>
-      <div class="portfolio">
-        <h2>Design Portfolio</h2>
+      <div id="middle" class="portfolio">
+        <h2><a href="#">Design</a></h2>
         <div class="cards">
           <div class="card">
             <div class="card-image">
@@ -39,7 +39,7 @@
               Tribute Page
             </div>
             <div class="card-copy">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+              <p>Fan page to entrepreneur, Doe Deere. Independent project to practice sass mixins and variables, bourbon, and neat grid</p>
             </div>
           </div>
 
@@ -48,10 +48,10 @@
               <img src="img/portfolio-2b.png" alt="">
             </div>
             <div class="card-header">
-              Freddie Mercury Animation
+              Freddy Mercury Animation
             </div>
             <div class="card-copy">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
+              <p>Website that honors the majesty of Freddie Mercury with transforms and animation</p>
             </div>
           </div>
 
@@ -63,7 +63,7 @@
               Drunklandia
             </div>
             <div class="card-copy">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p>Search app that allows Portland locals to find happy hours nearby. Relies on javascript and jquery to allow use to search and filter.</p>
             </div>
           </div>
           <div class="card">
@@ -74,7 +74,7 @@
               Spinsters
             </div>
             <div class="card-copy">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p>Album art submission app that practices transforms and animations, javascript, and jquery</p>
             </div>
           </div>
 
@@ -86,7 +86,7 @@
               Wildfang
             </div>
             <div class="card-copy">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p>Product page for local clothing company, using absolute/relative positioning, floats, and tables</p>
             </div>
           </div>
 
@@ -98,37 +98,32 @@
               Movie Tickets
             </div>
             <div class="card-copy">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p>App that allows users to select a movie and time of day, and in return get a price for their ticket</p>
             </div>
           </div>
 
         </div>
       </div>
-      <div class="makeup">
-        <h2>Makeup Portfolio</h2>
-        <img src="img/makeup-1.JPG" alt="">
-        <img src="img/makeup-2.jpg" alt="">
-        <img src="img/makeup-3.jpg" alt="">
-        <img src="img/makeup-4.png" alt="">
-        <img src="img/makeup-5.png" alt="">
-        <img src="img/makeup-6.jpg" alt="">
-        <img src="img/makeup-7.jpg" alt="">
-        <img src="img/makeup-8.jpg" alt="">
-        <img src="img/makeup-9.jpg" alt="">
-        <img src="img/makeup-10.jpg" alt="">
-        <img src="img/makeup-11.jpg" alt="">
-        <img src="img/makeup-12.jpg" alt="">
-        <img src="img/makeup-13.jpg" alt="">
-        <img src="img/makeup-14.jpg" alt="">
+      <div id="bottom" class="makeup">
+        <h2><a href="#">Makeup</a></h2>
+        <div class="makeup-gallery">
+          <img src="img/makeup-7.jpg" height="300" alt="">
+          <img src="img/makeup-8.jpg" height="300" alt="">
+          <img src="img/makeup-9.jpg" height="300" alt="">
+          <img src="img/makeup-12.jpg" height="300" alt="">
+          <img src="img/makeup-13.jpg" height="300" alt="">
+          <img src="img/makeup-14.jpg" height="300" alt="">
+        </div>
+        <div class="makeup-description">
+          <p>See more examples of my makeup work <a href="http://www.naturalglowpdx.com/photo-gallery.html">here</a>. Photos above by Julie Gee and Last Dance Photography.</p>
+        </div>
       </div>
       <footer>
-        <nav>
-          <ul>
-            <li><a href="#">facebook icon</a></li>
-            <li><a href="#">pinterest icon</a></li>
-            <li><a href="#">instagram icon</a></li>
-          </ul>
-        </nav>
+        <ul>
+          <li><a href="https://www.facebook.com/KristenAMcKee"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.pinterest.com/kristendynamite/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/mckeekristen/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        </ul>
         <span>&copy; Kristen McKee, 2017</span>
       </footer>
     </div>

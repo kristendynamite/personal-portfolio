@@ -1,3 +1,17 @@
 footer {
-  background: mistyrose;
+  background: mintcream;
+  ul {
+    display:inline-flex;
+    li {
+      list-style: none;
+      color: black;
+      font-size: 2em;
+      margin: 20px 10px;
+      padding: 10px 15px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
 }

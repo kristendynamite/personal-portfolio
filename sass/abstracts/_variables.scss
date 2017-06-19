@@ -4,14 +4,14 @@ $portfolio-background:linear-gradient(to right, paleturquoise, silver, thistle);
 
 //fonts
 $header-font: 'Red Moon Rising';
-$default-font: 'Nunito', sans-serif;
+$default-font: 'Cormorant Infant', serif;
 
 //breakpoints
 $tablet-bp: 'screen and (min-width: 768px)';
 $desktop-bp: 'screen and (min-width: 992px)';
 
 //portfolio variables
-$base-border-color: turquoise !default;
+$base-border-color: mintcream !default;
 $base-border-radius: 3px !default;
 $base-background-color: white !default;
 $base-spacing: 1.5em !default;
@@ -24,4 +24,4 @@ $card-background: lighten($card-border-color, 10%);
 $card-header-background: $card-background;
 $card-margin: 1em;
 $card-image-hover-opacity: 0.7;
-$card-image-hover-color: thistle;
+$card-image-hover-color: black;

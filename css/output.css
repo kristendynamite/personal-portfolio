@@ -17,7 +17,7 @@ html, body, .container {
   font-family: 'Red Moon Rising';
   src: url("../font/Red-Moon-Rising-3.0tf"); }
 body {
-  font-family: "Nunito", sans-serif; }
+  font-family: "Cormorant Infant", serif; }
 
 h1, h2 {
   font-family: "Red Moon Rising"; }
@@ -31,7 +31,8 @@ a {
   font-family: "Red Moon Rising"; }
 
 p {
-  font-size: 14px; }
+  font-size: 16px;
+  font-style: italic; }
 
 header {
   display: flex;
@@ -80,7 +81,7 @@ header {
   align-items: center;
   justify-content: space-around;
   height: 500px;
-  background: mistyrose;
+  background: mintcream;
   padding: 1em 3em; }
   .about-me .intro {
     flex-direction: column;
@@ -112,8 +113,10 @@ header {
       text-align: left;
       line-height: 1.8em;
       padding: 5px; }
+      .about-me .content p a {
+        text-decoration: none; }
       .about-me .content p span {
-        font-weight: 700;
+        font-weight: 600;
         font-size: 2em;
         text-align: left; }
 
@@ -126,15 +129,43 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  border-top: 100px solid black;
-  padding-top: 50px; }
+  border-top: 50px solid black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 1200px; }
   .portfolio h2 {
     padding: 20px;
     color: white;
     background: black;
     display: flex;
     align-self: flex-start;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 1.5em; }
+    .portfolio h2 a {
+      color: #FFF;
+      margin: 0px 10px;
+      padding: 10px 15px;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      text-decoration: none; }
+      .portfolio h2 a::before, .portfolio h2 a::after {
+        position: absolute;
+        opacity: 0;
+        width: 0%;
+        height: 2px;
+        content: '';
+        background: linear-gradient(to right, turquoise, silver, mistyrose, hotpink);
+        transition: all 0.3s; }
+      .portfolio h2 a::before {
+        left: 0px;
+        top: 0px; }
+      .portfolio h2 a::after {
+        right: 0px;
+        bottom: 0px; }
+      .portfolio h2 a:hover::before, .portfolio h2 a:hover::after {
+        opacity: 1;
+        width: 100%; }
   .portfolio .cards {
     display: flex;
     flex-wrap: wrap;
@@ -142,21 +173,20 @@ header {
     position: absolute;
     top: 220px; }
   .portfolio .card {
-    background-color: #6ce7db;
-    border: 1px solid turquoise;
+    background-color: white;
+    border: 1px solid mintcream;
     border-radius: 3px;
     box-shadow: 0 2px 4px #e6e6e6;
     cursor: pointer;
-    flex-basis: 25em;
+    flex-basis: 30%;
     flex-grow: 1;
     margin: 0 1em 1.5em 1em;
     position: relative;
     transition: all 0.2s ease-in-out; }
     .portfolio .card .card-image {
-      background-color: thistle;
-      height: 200px;
-      max-height: 200px;
-      overflow: hidden; }
+      background-color: black;
+      max-height: 400px;
+      overflow: visible; }
       .portfolio .card .card-image img {
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
@@ -164,8 +194,8 @@ header {
         transition: all 0.2s ease-in-out;
         width: 100%; }
     .portfolio .card .card-header {
-      background-color: #6ce7db;
-      border-bottom: 1px solid turquoise;
+      background-color: white;
+      border-bottom: 1px solid mintcream;
       border-radius: 3px 3px 0 0;
       font-weight: bold;
       line-height: 1.5em;
@@ -182,21 +212,81 @@ header {
       .portfolio .card:focus img, .portfolio .card:hover img {
         opacity: 0.7; }
     .portfolio .card:active {
-      background-color: #6ce7db; }
+      background-color: white; }
       .portfolio .card:active .card-header {
-        background-color: #6ce7db; }
+        background-color: white; }
 
 .makeup {
+  padding-top: 50px;
   margin: 0 auto;
-  background: black; }
+  background: black;
+  height: 100%; }
   .makeup h2 {
-    padding: 20px;
-    color: white;
-    background: black; }
-  .makeup img {
-    height: 200px; }
+    padding: 30px;
+    margin: 0 auto;
+    font-size: 1.5em;
+    width: 180px;
+    background: white; }
+    .makeup h2 a {
+      margin: 0px 10px;
+      color: black;
+      padding: 10px 15px;
+      position: relative;
+      cursor: pointer;
+      text-decoration: none !important;
+      color: black; }
+      .makeup h2 a::before, .makeup h2 a::after {
+        position: absolute;
+        opacity: 0;
+        width: 0%;
+        height: 2px;
+        content: '';
+        background: linear-gradient(to right, turquoise, silver, mistyrose, hotpink);
+        transition: all 0.3s; }
+      .makeup h2 a::before {
+        left: 0px;
+        top: 0px; }
+      .makeup h2 a::after {
+        right: 0px;
+        bottom: 0px; }
+      .makeup h2 a:hover::before, .makeup h2 a:hover::after {
+        opacity: 1;
+        width: 100%; }
+  .makeup .makeup-gallery {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20em;
+    flex-grow: 1;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-content: stretch; }
+    .makeup .makeup-gallery img {
+      height: 200px;
+      max-height: 200px;
+      overflow: hidden; }
+      .makeup .makeup-gallery img:hover {
+        transition: all 1s ease-in;
+        transform: scale(2.7, 2.7); }
+  .makeup .makeup-description {
+    text-align: center;
+    color: mintcream;
+    font-size: 14em;
+    margin-top: 35px;
+    padding: 5px; }
 
 footer {
-  background: mistyrose; }
+  background: mintcream; }
+  footer ul {
+    display: inline-flex; }
+    footer ul li {
+      list-style: none;
+      color: black;
+      font-size: 2em;
+      margin: 20px 10px;
+      padding: 10px 15px; }
+      footer ul li a {
+        text-decoration: none;
+        color: black; }
 
 /*# sourceMappingURL=output.css.map */

@@ -7,8 +7,10 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  border-top: 100px solid black;
+  border-top: 50px solid black;
   padding-top: 50px;
+  padding-bottom: 50px;
+  height: 1200px;
 
   h2 {
     padding: 20px;
@@ -17,6 +19,37 @@
     display: flex;
     align-self: flex-start;
     margin: 0 auto;
+    font-size: 1.5em;
+    a {
+    color: #FFF;
+    margin: 0px 10px;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    text-decoration: none;
+    &::before, &::after {
+      position: absolute;
+      opacity: 0;
+      width: 0%;
+      height: 2px;
+      content: '';
+      background: linear-gradient(to right, turquoise, silver, mistyrose, hotpink);
+      transition: all 0.3s;
+    }
+    &::before {
+      left: 0px;
+      top: 0px;
+    }
+    &::after {
+      right: 0px;
+      bottom: 0px;
+    }
+    &:hover::before, &:hover::after {
+      opacity: 1;
+      width: 100%;
+    }
+    }
   }
 
   .cards {
@@ -28,27 +61,12 @@
   }
 
   .card {
-    $base-border-color: turquoise !default;
-    $base-border-radius: 3px !default;
-    $base-background-color: white !default;
-    $base-spacing: 1.5em !default;
-    $action-color: #477DCA !default;
-    $dark-gray: #333 !default;
-    $base-font-color: $dark-gray !default;
-    $card-border-color: $base-border-color;
-    $card-border: 1px solid $card-border-color;
-    $card-background: lighten($card-border-color, 10%);
-    $card-header-background: $card-background;
-    $card-margin: 1em;
-    $card-image-hover-opacity: 0.7;
-    $card-image-hover-color: thistle;
-
     background-color: $card-background;
     border: $card-border;
     border-radius: $base-border-radius;
     box-shadow: 0 2px 4px darken($base-background-color, 10%);
     cursor: pointer;
-    flex-basis: 25em;
+    flex-basis: 30%;
     flex-grow: 1;
     margin: 0 $card-margin $base-spacing $card-margin;
     position: relative;
@@ -56,9 +74,8 @@
 
     .card-image {
       background-color: $card-image-hover-color;
-      height: 200px;
-      max-height: 200px;
-      overflow: hidden;
+      max-height: 400px;
+      overflow: visible;
 
       img {
         @include border-top-radius($base-border-radius);

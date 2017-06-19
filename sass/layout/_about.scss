@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-around;
   height: 500px;
-  background: mistyrose;
+  background: mintcream;
   padding: 1em 3em;
   .intro {
     flex-direction: column;
@@ -40,8 +40,11 @@
       text-align: left;
       line-height: 1.8em;
       padding: 5px;
+      a {
+        text-decoration: none;
+      }
       span {
-        font-weight: 700;
+        font-weight: 600;
         font-size: 2em;
         text-align: left;
         }
@@ -49,58 +52,3 @@
 
   }
 }
-
-
-
-  //   .gallery-item {
-  //     overflow: hidden;
-  //     position: relative;
-  //     margin-top: 30px;
-  //     border: 1px solid lightgrey;
-  //
-  //     animation: spin 1.5s ease-in-out forwards;
-  //
-  //     @include grid-column(12);
-  //
-  //     @include tablet-bp {
-  //       @include grid-column(6);
-  //     };
-  //
-  //     @include desktop-bp {
-  //       @include grid-column(4);
-  //     };
-  //
-  //     img {
-  //       width: 100%;
-  //       display: block;
-  //
-  //       &:hover + .content {
-  //         bottom: 0px;
-  //       }
-  //     }
-  //
-  //     .content {
-  //       position: absolute;
-  //       padding: 10px;
-  //       bottom: 0px;
-  //       left: 0;
-  //       width: 100%;
-  //       transition: bottom .7s ease;
-  //       background-color: rgba(darken($off-white, 30%), 0.9);
-  //
-  //       @include desktop-bp {
-  //         bottom: -120px;
-  //       }
-  //     }
-  //   }
-  // }
-  //
-  //
-  // @keyframes spin {
-  //   0% {
-  //     transform: rotate(0);
-  //   }
-  //   100% {
-  //     transform: rotate(735deg);
-  //   }
-  // }

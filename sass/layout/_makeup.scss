@@ -1,17 +1,79 @@
 .makeup {
+  padding-top: 50px;
   margin: 0 auto;
   background: black;
+  height: 100%;
   // background-image: url(../img/background-2.jpg);
   // background-repeat: no-repeat;
   // background-position: center;
   // background-size: cover;
   // background-attachment: fixed;
   h2 {
-    padding: 20px;
-    color: white;
-    background: black;
+    padding: 30px;
+    margin: 0 auto;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-self: center;
+    font-size: 1.5em;
+    width: 180px;
+    background: white;
+    a {
+      margin: 0px 10px;
+      color: black;
+      padding: 10px 15px;
+      position: relative;
+      cursor: pointer;
+      text-decoration: none !important;
+      color: black;
+      &::before, &::after {
+        position: absolute;
+        opacity: 0;
+        width: 0%;
+        height: 2px;
+        content: '';
+        background: linear-gradient(to right, turquoise, silver, mistyrose, hotpink);
+        transition: all 0.3s;
+      }
+      &::before {
+        left: 0px;
+        top: 0px;
+      }
+      &::after {
+        right: 0px;
+        bottom: 0px;
+      }
+      &:hover::before, &:hover::after {
+        opacity: 1;
+        width: 100%;
+      }
+    }
   }
-  img {
-    height: 200px;
+  .makeup-gallery {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20em;
+    flex-grow: 1;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-content: stretch;
+
+    img {
+      height: 200px;
+      max-height: 200px;
+      overflow: hidden;
+      &:hover {
+        transition: all 1s ease-in;
+        transform: scale(2.7,2.7);
+      }
+    }
+  }
+  .makeup-description {
+    text-align: center;
+    color: mintcream;
+    font-size: 14em;
+    margin-top: 35px;
+    padding: 5px;
   }
 }
